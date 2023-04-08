@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Kalkulator Revou Muhammad Salman Farrisi</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="font-awesome-4.6.1/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/jquery-1.2.3.min.js"></script>
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <script src="index.js"></script>
+    </div>
+    <div class="container">
+        <div class="homepage">
+            <ul class="nav nav-pills nav-justified">
+                <li class="active"><a data-toggle="pill" href="#segitiga">Segitiga</a></li>
+                <li><a data-toggle="pill" href="#jajar-genjang">Jajar Genjang</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="segitiga" class="tab-pane fade in active">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="panel panel-default text-center">
+                                <div class="panel-heading">
+                                    <h2>Luas Segitiga</h2>
+                                </div>
+                                <div class="panel-body">
+                                    <p class="text-left">Rumus Luas Segitiga yaitu :</p>
+                                    <p><strong>L = 1/2 x a x t</strong></p>
+                                    <p class="text-left">Di mana :<br />L = Luas<br />a = Panjang Alas<br />t = Tinggi
+                                    </p>
+                                </div>
+                                <div class="panel-footer">
+                                    <form name="luas_s">
+                                        <h3>Hitung Luas Segitiga</h3>
+                                        <p>Masukan Alas <input type="text" name="alas"></p>
+                                        <p>Masukan Tinggi <input type="text" name="tinggi"></p>
+                                        <p><input type="button" name="aksi" value="Hitung" onclick="luas()"></p>
+
+                                        <h2>
+                                            <b> Luas Segitiga Adalah </b> <input type="text" name="hasil">
+                                        </h2>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="panel panel-default text-center">
+                                <div class="panel-heading">
+                                    <h2>Keliling Segitiga</h2>
+                                </div>
+                                <div class="panel-body">
+                                    <p class="text-left">Rumus Keliling Segitiga yaitu :</p>
+                                    <p><strong>K = S1 + S2 + S3</strong></p>
+                                    <p class="text-left">Di mana :<br />K = Keliling<br />S1 = Sisi A<br />S2 = Sisi
+                                        B<br />S3 = Sisi C</p>
+                                </div>
+                                <div class="panel-footer">
+                                    <form name="kel_s">
+                                        <h3>Hitung Keliling Segitiga</h3>
+                                        <p>Masukan Sisi Pertama <input type="text" name="s1"></p>
+                                        <p>Masukan Sisi Kedua <input type="text" name="s2"></p>
+                                        <p>Masukan Sisi Ketiga <input type="text" name="s3"></p>
+                                        <p><input type="button" name="aksi_ks" value="Hitung" onclick="keliling()"></p>
+
+                                        <h2>
+                                            <b> Keliling Segitiga Adalah </b> <input type="text" name="hasil_ks">
+                                        </h2>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="jajar-genjang" class="tab-pane fade">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="panel panel-default text-center">
+                                <div class="panel-heading">
+                                    <h2>Luas Jajar Genjang</h2>
+                                </div>
+                                <div class="panel-body">
+                                    <p class="text-left">Rumus Luas Jajargenjang yaitu :</p>
+                                    <p><strong>L = a x t</strong></p>
+                                    <p class="text-left">Di mana :<br />L = Luas<br />a = Alas<br />t = Tinggi</p>
+                                </div>
+                                <div class="panel-footer">
+                                    <form name="luas_j">
+                                        <h3>Hitung Luas Jajar Genjang</h3>
+                                        <p>Masukan Alas <input type="text" name="alasj"></p>
+                                        <p>Masukan Tinggi <input type="text" name="tinggij"> </p>
+                                        <p><input type="button" name="aksi_lj" value="Hitung" onclick="luasj()"></p>
+                                        <h2>
+                                            <b>Luas Jajar Genjang Adalah</b> <input type="text" name="hasil_lj">
+                                        </h2>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="panel panel-default text-center">
+                                <div class="panel-heading">
+                                    <h2>Keliling Jajar Genjang</h2>
+                                </div>
+                                <div class="panel-body">
+                                    <p class="text-left">Rumus Keliling Jajar Genjang yaitu :</p>
+                                    <p><strong>K = 2 (a + m)</strong></p>
+                                    <p class="text-left">Di mana :<br />K = Keliling<br />a = Alas<br />m = Sisi Miring
+                                    </p>
+                                </div>
+                                <div class="panel-footer">
+                                    <form name="kel_jg">
+                                        <h3>Hitung Keliling Jajar Genjang</h3>
+                                        <p>Masukan Alas <input type="number" name="alasjs"></p>
+                                        <p>Masukan Sisi Miring <input type="number" name="sisim"></p>
+                                        <p><input type="button" name="hitung_kelj" value="Hitung" onclick="kelilingj()">
+                                        </p>
+                                        <h2>
+                                            <b>Keliling Jajargenjang Adalah</b> <input type="text" name="hkel_jg">
+                                        </h2>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
